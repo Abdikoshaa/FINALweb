@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style5.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ 
+
+ <style>
+
+h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.container2 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+p {
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Additional styles for the container or body */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #689CD2;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+.header__section {
+    display: flex;
+    align-items: center;
+}
+
+.header__item {
+    padding: 10px 15px;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.header__item:hover{
+    background-color: blue;
+    border-radius: 4px;
+}
+
+.headerlogo {
+    font-weight: bold;
+}
+
+.headerbutton {
+    cursor: pointer;
+}
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
+    }
+    .grid-item {
+      border: 1px solid black;
+      padding: 10px;
+
+    }
+
+ body {
+    background-color: #34495e;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    overflow-x: hidden;
+    min-width: 280px;
+}
+
+  </style>
+
+    <div class="header">
+        <div class="header__section">
+            <div class="header__item headerlogo"><a href="index.html">
+                CW</a></div>
+
+            <div class="header__item headerbutton"><a href="index4.html">News</a></div>
+            <div class="header__item headerbutton"><a href="index5.html">Reservation</a></div>
+        </div>
+        <div class="header__section">
+            <div class="header__item headerbutton"><a href="index3.html">Signup</a></div>
+            <div class="header__item headerbutton"><a href="index2.html">Login</a></div>
+        </div>
+    </div>
+<link rel="icon" type="image/png" href="favv.png">
+</head>
+
+<body>
+
+<div class="container2">
+  <div class="grid">
+    <div class="grid-items">
+      <h2>Welcome to our cinema reservation service!</h2>
+      <p>At our cinema, we offer a convenient and hassle-free way for you to reserve cinema rooms for your favorite movies. Whether you're planning a movie night with friends, a family outing, or a special event, our reservation system ensures that you can secure your seats in advance and enjoy a comfortable and enjoyable movie experience.</p>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    <div class="grid-container">
+      <div class="grid-item">Room index</div>
+      <div class="grid-item">Name of the Movie</div>
+      <div class="grid-item">Time</div>
+      <div class="grid-item">Movie Rating</div>
+      <div class="grid-item">CinemaRoom-1</div>
+      <div class="grid-item">Movie 1</div>
+      <div class="grid-item">179 min. / 02:59</div>
+      <div class="grid-item">7.8</div>
+      <div class="grid-item">CinemaRoom-2</div>
+      <div class="grid-item">Movie </div>
+      <div class="grid-item">120 min. / 02:00</div>
+      <div class="grid-item">9.1</div>
+      <div class="grid-item">CinemaRoom-3</div>
+      <div class="grid-item">Movie 3</div>
+      <div class="grid-item">150 min. / 02:30</div>
+      <div class="grid-item">6.5</div>
+    </div>
+
+    <form>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" class="form-control" id="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="calendar">Choose Day</label>
+        <input type="date" class="form-control" id="calendar" min='2023-05-30'  max='2023-06-03' required>
+      </div>
+      <div class="form-group">
+        <label for="dropdown">Select the room that you want to reserve:</label>
+        <select class="form-control" id="dropdown" required>
+          <option value="option1">СinemaRoom-1</option>
+          <option value="option2">СinemaRoom-2</option>
+          <option value="option3">СinemaRoom-3</option>
+        </select>
+      </div>
+
+
+<div class="form-group">
+  <label for="checkbox">How many people will be in room:</label><br>
+  <div>
+    <input type="radio" id="chips" name="extras" value="chips" required>
+    <label for="chips">Just Me</label>
+  </div>
+  <div>
+    <input type="radio" id="drinks" name="extras" value="drinks" required>
+    <label for="drinks">Me with Someone</label>
+  </div>
+  <div>
+    <input type="radio" id="none" name="extras" value="none" required>
+    <label for="none"> Three person</label>
+  </div>
+</div>
+      <div class="form-group">
+        <label for="checkbox">Do you need any extra additions :</label><br>
+        <input type="checkbox" id="checkbox" >
+        <label for="checkbox">Chips</label>
+        <input type="checkbox" id="checkbox" >
+        <label for="checkbox">Drinks</label>
+        <input type="checkbox" id="checkbox" >
+        <label for="checkbox">None</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</body>
+<script src="web5.js"></script>
+</html>
+```
